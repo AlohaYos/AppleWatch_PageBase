@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="left" text="１ページ目" id="SH5-Oq-Mtb">
+                            <color key="textColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="サブ1-2-3" id="uJ3-dc-e1F">
+                            <connections>
+                                <action selector="subPageButtonPushed" destination="AgC-eL-Hgc" id="YuA-dP-6gn"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="IzS-Fm-rIk" kind="relationship" relationship="nextPage" id="TIN-Tu-y43"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-305" y="229"/>
+        </scene>
+        <!--sub1interface-->
+        <scene sceneID="lzd-iC-L4a">
+            <objects>
+                <controller identifier="sub1interface" id="cfH-st-2Ch" customClass="Sub1InterfaceController">
+                    <items>
+                        <label alignment="left" text="サブ１" id="w0o-DO-3DK">
+                            <color key="textColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-305" y="469"/>
+        </scene>
+        <!--sub2interface-->
+        <scene sceneID="EmW-pL-Mgk">
+            <objects>
+                <controller identifier="sub2interface" id="iem-5D-DZb" customClass="Sub2InterfaceController">
+                    <items>
+                        <label alignment="left" text="サブ２" id="Lkw-Cg-RBo">
+                            <color key="textColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-94" y="469"/>
+        </scene>
+        <!--sub3interface-->
+        <scene sceneID="QOE-Kk-0OK">
+            <objects>
+                <controller identifier="sub3interface" id="IaU-vX-3ZA" customClass="Sub3InterfaceController">
+                    <items>
+                        <label alignment="left" text="サブ３" id="BRd-0i-qbA">
+                            <color key="textColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="117" y="469"/>
+        </scene>
+        <!--Second Interface Controller-->
+        <scene sceneID="V57-Xs-1vg">
+            <objects>
+                <controller id="IzS-Fm-rIk" customClass="SecondInterfaceController">
+                    <items>
+                        <label alignment="left" text="２ページ目" id="IZj-Lm-zm5">
+                            <color key="textColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="サブ2-3-1" id="N3c-kf-9Cv">
+                            <connections>
+                                <action selector="subPageButtonPushed" destination="IzS-Fm-rIk" id="5aC-HA-ULd"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="Oaq-kz-wCl" kind="relationship" relationship="nextPage" id="bid-yA-pOP"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-94" y="229"/>
+        </scene>
+        <!--Third Interface Controller-->
+        <scene sceneID="GjP-Ud-IrH">
+            <objects>
+                <controller id="Oaq-kz-wCl" customClass="ThirdInterfaceController">
+                    <items>
+                        <label alignment="left" text="３ページ目" id="iJf-wT-j3c">
+                            <color key="textColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="117" y="229"/>
+        </scene>
+    </scenes>
+</document>
